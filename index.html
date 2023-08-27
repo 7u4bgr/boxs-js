@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let buttons=document.createElement("div")
+        for (let index = 1; index < 13; index++) {
+            let button=document.createElement("button")
+            let p=document.createElement("p")
+            buttons.appendChild(button)
+            button.appendChild(p)
+            p.innerHTML=[index]
+            button.style.width="25%"
+            button.style.height="150px"
+        }
+        buttons.style.display="flex"
+        buttons.style.flexWrap="wrap"
+        buttons.style.justifyContent="center"
+        buttons.style.gap="10px"
+        document.body.appendChild(buttons)
+    </script>
+</body>
+</html>
